@@ -1,5 +1,6 @@
 # notas odoo
 
+```sql
 -- seleciona id_externo por id numerico
 SELECT
     imd.module || '.' || imd.name AS external_id,
@@ -12,3 +13,4 @@ JOIN
 WHERE
     imd.model = 'ir.actions.act_window'
     AND ia.id = 434;
+```
