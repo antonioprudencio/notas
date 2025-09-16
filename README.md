@@ -1,5 +1,14 @@
 # notas odoo
 
+
+```sql
+-- seleciona id_texto por id numerico
+SELECT m.id, m.name, d.module, d.name AS xml_name
+FROM ir_ui_menu m
+JOIN ir_model_data d ON d.model = 'ir.ui.menu' AND d.res_id = m.id
+WHERE m.id = 193;
+```
+
 ```sql
 -- seleciona id_externo por id numerico
 SELECT
