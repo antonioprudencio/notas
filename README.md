@@ -23,3 +23,27 @@ WHERE
     imd.model = 'ir.actions.act_window'
     AND ia.id = 434;
 ```
+
+Adiciona acao no botao de action
+
+
+    <record id="action_criar_usuario" model="ir.actions.server">
+        <field name="name">Criar Usuário</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="state">code</field>
+        <field name="code">
+            record.action_criar_usuario()
+        </field>
+    </record>
+
+    <!-- Adicionando ao menu "Ação" -->
+   <record id="action_criar_usuario_ir" model="ir.actions.server">
+    <field name="name">Criar Usuário</field>
+    <field name="model_id" ref="base.model_res_partner"/>
+    <field name="state">code</field>
+    <field name="code">
+        record.action_criar_usuario()
+    </field>
+    <field name="binding_model_id" ref="base.model_res_partner"/>
+</record>
+
