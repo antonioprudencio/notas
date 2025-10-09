@@ -25,8 +25,7 @@ WHERE
 ```
 
 Adiciona acao no botao de action
-
-
+```python
     <record id="action_criar_usuario" model="ir.actions.server">
         <field name="name">Criar Usuário</field>
         <field name="model_id" ref="base.model_res_partner"/>
@@ -46,9 +45,10 @@ Adiciona acao no botao de action
     </field>
     <field name="binding_model_id" ref="base.model_res_partner"/>
 </record>
-
+```
 
 Customiza view da wizard
+```python
 <form string="Titulo" class="o_form_full_width">
         <sheet>
           <div style="min-height: 150px; display: flex; align-items: center; justify-content: center;">
@@ -61,3 +61,4 @@ Customiza view da wizard
           <button string="CANCELAR" class="btn-secondary" special="cancel"/>
         </footer>
       </form>
+```python
