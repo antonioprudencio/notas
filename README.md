@@ -47,3 +47,17 @@ Adiciona acao no botao de action
     <field name="binding_model_id" ref="base.model_res_partner"/>
 </record>
 
+
+Customiza view da wizard
+<form string="Confirmação de Emissão do ITBI" class="o_form_full_width">
+        <sheet>
+          <div style="min-height: 150px; display: flex; align-items: center; justify-content: center;">
+            <field name="mensagem" readonly="1" nolabel="1"
+                   style="white-space: pre-line; width: 100%; height: 100%; font-size: 15px; text-align: center;"/>
+          </div>
+        </sheet>
+        <footer>
+          <button name="action_confirmar" string="CONFIRMAR" type="object" class="btn-primary"/>
+          <button string="CANCELAR" class="btn-secondary" special="cancel"/>
+        </footer>
+      </form>
