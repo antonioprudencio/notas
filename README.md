@@ -49,7 +49,7 @@ Adiciona acao no botao de action
 
 
 Customiza view da wizard
-<form string="Confirmação de Emissão do ITBI" class="o_form_full_width">
+<form string="Titulo" class="o_form_full_width">
         <sheet>
           <div style="min-height: 150px; display: flex; align-items: center; justify-content: center;">
             <field name="mensagem" readonly="1" nolabel="1"
